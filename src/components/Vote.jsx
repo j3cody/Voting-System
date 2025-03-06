@@ -20,7 +20,7 @@ const Vote = ({ user }) => {
 
   const voteCandidate = async (id) => {
     try {
-      const res = await axios.post("http://localhost:5000/api/vote", {
+      const res = await axios.post("https://voteapi.jatinpatidar.me/api/vote", {
         scholarNo: user.scholarNo,
         candidateId: id,
       });

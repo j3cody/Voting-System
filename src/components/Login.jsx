@@ -19,7 +19,7 @@ const Login = ({ setUser }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:5000/api/login", form);
+      const res = await axios.post("https://voteapi.jatinpatidar.me/api/login", form);
       setUser({ ...res.data.user });
 
       localStorage.setItem("user", res.data.user);

@@ -21,7 +21,7 @@ const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:5000/api/register", form);
+      const res = await axios.post("https://voteapi.jatinpatidar.me/api/register", form);
       setMessage(res.data.message);
       setTimeout(() => {
         navigate("/login");

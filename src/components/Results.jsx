@@ -8,7 +8,7 @@ const Results = ({ user }) => {
   useEffect(() => {
     const fetchResults = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/candidates");
+        const res = await axios.get("https://voteapi.jatinpatidar.me/api/candidates");
         setResults(res.data);
       } catch (err) {
         console.error(err);
